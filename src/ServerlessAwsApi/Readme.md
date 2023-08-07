@@ -6,7 +6,7 @@ This project shows how to run an ASP.NET Core Web API project as an AWS Lambda e
 For more information about how the Amazon.Lambda.AspNetCoreServer package works and how to extend its behavior view its [README](https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.AspNetCoreServer/README.md) file in GitHub.
 
 
-### Configuring for API Gateway HTTP API ###
+### Configuring for API Gateway HTTP API ### 
 
 API Gateway supports the original REST API and the new HTTP API. In addition HTTP API supports 2 different
 payload formats. When using the 2.0 format the base class of `LambdaEntryPoint` must be `Amazon.Lambda.AspNetCoreServer.APIGatewayHttpApiV2ProxyFunction`.
