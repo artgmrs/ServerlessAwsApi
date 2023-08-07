@@ -35,4 +35,4 @@ jobs:
     - name: Display current directory structure
       run: ls -R ./
     - name: Deploy to AWS Lambda
-      run: dotnet lambda deploy-serverless -sn ServerlessAwsApi -sb code-pipeline-serveless-dotnet-artgmrs -t serverless.template --region sa-east-1
+      run: dotnet lambda deploy-serverless -sn ServerlessAwsApi -sb code-pipeline-serveless-dotnet-artgmrs -t ./src/ServerlessAwsApi/serverless.template --region sa-east-1
