@@ -32,5 +32,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Display current directory structure
+      run: ls -R ./
     - name: Deploy to AWS Lambda
       run: dotnet lambda deploy-serverless -sn ServerlessAwsApi -sb code-pipeline-serveless-dotnet-artgmrs -t serverless.template --region sa-east-1
